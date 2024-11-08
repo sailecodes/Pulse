@@ -1,9 +1,9 @@
 export const fonts = {
-  RedHatDisplayLight: require("../assets/fonts/RedHatDisplay-Light.ttf"),
-  RedHatDisplayRegular: require("../assets/fonts/RedHatDisplay-Regular.ttf"),
-  RedHatDisplayMedium: require("../assets/fonts/RedHatDisplay-Medium.ttf"),
-  RedHatDisplaySemiBold: require("../assets/fonts/RedHatDisplay-SemiBold.ttf"),
-  RedHatDisplayBold: require("../assets/fonts/RedHatDisplay-Bold.ttf"),
-  RedHatDisplayExtraBold: require("../assets/fonts/RedHatDisplay-ExtraBold.ttf"),
-  RedHatDisplayBlack: require("../assets/fonts/RedHatDisplay-Black.ttf"),
+  RHDLight: require("../assets/fonts/RedHatDisplay-Light.ttf"),
+  RHDRegular: require("../assets/fonts/RedHatDisplay-Regular.ttf"),
+  RHDMedium: require("../assets/fonts/RedHatDisplay-Medium.ttf"),
+  RHDSemiBold: require("../assets/fonts/RedHatDisplay-SemiBold.ttf"),
+  RHDBold: require("../assets/fonts/RedHatDisplay-Bold.ttf"),
+  RHDExtraBold: require("../assets/fonts/RedHatDisplay-ExtraBold.ttf"),
+  RHDBlack: require("../assets/fonts/RedHatDisplay-Black.ttf"),
 };

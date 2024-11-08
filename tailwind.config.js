@@ -5,13 +5,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        RedHatDisplayLight: ["RedHatDisplay-Light", "sans-serif"],
-        RedHatDisplayRegular: ["RedHatDisplay-Regular", "sans-serif"],
-        RedHatDisplayMedium: ["RedHatDisplay-Medium", "sans-serif"],
-        RedHatDisplaySemiBold: ["RedHatDisplay-SemiBold", "sans-serif"],
-        RedHatDisplayBold: ["RedHatDisplay-Bold", "sans-serif"],
-        RedHatDisplayExtraBold: ["RedHatDisplay-ExtraBold", "sans-serif"],
-        RedHatDisplayBlack: ["RedHatDisplay-Black", "sans-serif"],
+        RHDLight: ["RedHatDisplay-Light", "sans-serif"],
+        RHDRegular: ["RedHatDisplay-Regular", "sans-serif"],
+        RHDMedium: ["RedHatDisplay-Medium", "sans-serif"],
+        RHDSemiBold: ["RedHatDisplay-SemiBold", "sans-serif"],
+        RHDBold: ["RedHatDisplay-Bold", "sans-serif"],
+        RHDExtraBold: ["RedHatDisplay-ExtraBold", "sans-serif"],
+        RHDBlack: ["RedHatDisplay-Black", "sans-serif"],
       },
     },
   },

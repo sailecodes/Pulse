@@ -11,13 +11,13 @@ SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   const [loaded] = useFonts({
-    RedHatDisplayLight: fonts.RedHatDisplayLight,
-    RedHatDisplayRegular: fonts.RedHatDisplayRegular,
-    RedHatDisplayMedium: fonts.RedHatDisplayMedium,
-    RedHatDisplaySemiBold: fonts.RedHatDisplaySemiBold,
-    RedHatDisplayBold: fonts.RedHatDisplayBold,
-    RedHatDisplayExtraBold: fonts.RedHatDisplayExtraBold,
-    RedHatDisplayBlack: fonts.RedHatDisplayBlack,
+    RHDLight: fonts.RHDLight,
+    RHDRegular: fonts.RHDRegular,
+    RHDMedium: fonts.RHDMedium,
+    RHDSemiBold: fonts.RHDSemiBold,
+    RHDBold: fonts.RHDBold,
+    RHDExtraBold: fonts.RHDExtraBold,
+    RHDBlack: fonts.RHDBlack,
   });
 
   useEffect(() => {
