@@ -1,43 +1,24 @@
-import Swiper from "react-native-swiper";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { useRef, useState } from "react";
-import { Text } from "react-native";
 import { router } from "expo-router";
+import { Text, View } from "react-native";
 import CustomButton from "@/components/custom-button";
-import SwiperDot from "@/components/swiper-dot";
-
-const dummy = ["hello", "world", "goodbye"];
 
 const Onboarding = () => {
-  const swiperRef = useRef<Swiper>(null);
-  const [swiperInd, setSwiperInd] = useState(0);
-
-  const onSwiperBtnPress = () => {
-    if (swiperInd === dummy.length - 1) {
-      router.navigate("/(onboarding)");
-    } else {
-      setSwiperInd(swiperInd + 1);
-      swiperRef.current?.scrollBy(1);
-    }
-  };
-
   return (
-    <SafeAreaView className="flex-1 justify-between">
-      <Swiper
-        ref={swiperRef}
-        dot={<SwiperDot />}
-        activeDot={<SwiperDot isActive />}
-        onIndexChanged={(ind) => setSwiperInd(ind)}
-        loop={false}>
-        {dummy.map((d, ind) => (
-          <Text key={ind}>{ind}</Text>
-        ))}
-      </Swiper>
+    <SafeAreaView className="flex-1 justify-center items-center">
+      <View className="flex-1 justify-center items-center pt-[50px] mx-5">
+        <Text className="font-RHDBold text-purple-200 text-5xl tracking-[-1.5px]">Pulse</Text>
+        <Text className="font-RHDBold text-purple-300 text-5xl tracking-[-1.5px]">Pulse</Text>
+        <Text className="font-RHDBold text-purple-600 text-5xl tracking-[-1.5px]">Pulse</Text>
+        <Text className="font-RHDMedium text-neutral-500 text-2xl text-center">
+          Stay in rhythm with simplified task management
+        </Text>
+      </View>
       <CustomButton
-        className="absolute bottom-[90px]"
+        className="mb-5"
         isPrimary
-        text={swiperInd === dummy.length - 1 ? "Get started" : "Next"}
-        onPress={onSwiperBtnPress}
+        text="Get started"
+        onPress={() => router.navigate("/(root)/(tabs)/home")}
       />
     </SafeAreaView>
   );

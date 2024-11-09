@@ -4,7 +4,7 @@ const SwiperDot = ({ isActive }: { isActive?: boolean }) => {
   return (
     <View
       className={`
-        h-[5px] w-[35px] mx-1 rounded-md
+        h-[5px] w-[25px] mx-1 rounded-sm
         ${isActive ? "bg-purple-500" : "bg-purple-200"}  
       `}
     />
