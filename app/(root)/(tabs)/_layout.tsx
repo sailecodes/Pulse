@@ -1,11 +1,33 @@
 import { Tabs } from "expo-router";
+import TabBarIcon from "@/components/tab-bar-icon";
+import { icons } from "@/constants";
 
 const Layout = () => {
   return (
-    <Tabs>
+    <Tabs
+      screenOptions={{
+        tabBarShowLabel: false,
+        tabBarStyle: {
+          position: "absolute",
+          // backgroundColor: "#f3e8ff",
+          paddingBottom: 20,
+          marginHorizontal: 5,
+          borderTopLeftRadius: 40,
+          borderTopRightRadius: 40,
+        },
+      }}>
       <Tabs.Screen
         name="home"
-        options={{ headerShown: false }}
+        options={{
+          headerShown: false,
+          tabBarIcon: ({ focused }) => (
+            <TabBarIcon
+              activeIcon={icons.homeActive}
+              inactiveIcon={icons.homeInactive}
+              focused={focused}
+            />
+          ),
+        }}
       />
       <Tabs.Screen
         name="tasks"
@@ -17,7 +39,16 @@ const Layout = () => {
       />
       <Tabs.Screen
         name="profile"
-        options={{ headerShown: false }}
+        options={{
+          headerShown: false,
+          tabBarIcon: ({ focused }) => (
+            <TabBarIcon
+              activeIcon={icons.profileActive}
+              inactiveIcon={icons.profileInactive}
+              focused={focused}
+            />
+          ),
+        }}
       />
     </Tabs>
   );

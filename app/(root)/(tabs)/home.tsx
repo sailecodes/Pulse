@@ -19,7 +19,7 @@ const Home = () => {
             <Text className="font-RHDSemiBold text-neutral-100 text-lg">
               Get started on your tasks for today!
             </Text>
-            <TouchableOpacity className="justify-center items-center bg-neutral-100 py-2 rounded-se-xl">
+            <TouchableOpacity className="justify-center items-center bg-neutral-100 py-2 rounded-xl">
               <Text className="font-RHDBold text-purple-600 text-xl">View tasks</Text>
             </TouchableOpacity>
           </View>
